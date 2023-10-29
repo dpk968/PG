@@ -1,0 +1,72 @@
+/* Reset some default browser styles */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed; 
+    width: 100%; 
+    top: 0;
+    
+}
+
+.container {
+    background-image: url('img/bg.jpg'); /* Add your image path here */
+    background-size: cover;
+    background-attachment: fixed; /* Fix the background image */
+    background-repeat: no-repeat;
+    height: 1000%; 
+    margin-top: 80px;
+}
+
+.blog-list {
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blog-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px); /* Set width for 3 items per row */
+    box-sizing: border-box;
+}
+
+.blog-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.blog-card a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.blog-card a:hover {
+    background-color: #555;
+}

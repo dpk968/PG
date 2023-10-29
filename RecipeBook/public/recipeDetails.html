@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="sticky-nav">
+                <div class="nav-left">
+                    <a href="index.html"><img src="img/logo.jpg" alt="Recipe Hub Logo"></a>
+                    <h2 class="font-effect-shadow-multiple">Deepak Gupta</h2>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipeAddition.html">Add Recipe</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Catering</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="recipPage">
+            <div class="detail-container" id="detail-container">
+                <div class="detail-text-container" id="detail-text-container">
+                    <!-- <h1 id="recipe-name"></h1>
+                    <a href="updateRecipe.html"><button type="submit">Edit Recipe</button></a> -->
+                </div>
+            </div>
+    
+            <div class="ingredient">
+                <div class="ingredient-content">
+                    <div class="left-paragraph" id="left-paragraph">
+                        <h1>Steps</h1>
+                        <!-- <ul>
+                            <li><i class="fas fa-check text-success"></i> Item 1</li>
+                            <li><i class="fas fa-check text-success"></i> Item 2</li>
+                            <li><i class="fas fa-check text-success"></i> Item 3</li>
+                        </ul> -->
+                    </div>
+                    <div class="right-list" id="right-list">
+                        <h1>Ingredient</h1>
+                        <!-- <ul>
+                            <li><i class="fas fa-check text-success"></i> Item 1</li>
+                            <li><i class="fas fa-check text-success"></i> Item 2</li>
+                            <li><i class="fas fa-check text-success"></i> Item 3</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rating-form" id="rating-form">
+        <form id="commentForm">
+            <h2>Rate this item:</h2>
+            <div class="user-info">
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="stars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <h2>Your rating: <span id="rating-value">0</span> stars</h2>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="total-rating" id="total-rating">
+            
+        </div>
+    </div>
+
+    <div class="previos-rating" id="previos-rating">
+        <h1>Ratings...</h1>
+        <div class="all-ratings" id="all-ratings"></div>
+        <!-- <div class="rating-card">
+            <div class="rating">
+                <span class="rating-number">4.5</span>
+            </div>
+            <div class="customer-info">
+                <h3 class="customer-name">John Doe</h3>
+            </div>
+        </div> -->
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Deepak Recipe Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="recipeDetail.js"></script>
+</body>
+
+</html>

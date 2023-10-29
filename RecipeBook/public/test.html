@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset default margin and padding for the body and div elements */
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the card container */
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+/* Style the star logo */
+/* .star {
+    font-size: 36px;
+    color: #ffcc00;
+    background-color: red;
+} */
+
+/* Style the number */
+.number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+</style>
+<body>
+    <div class="card">
+        <div class="number">
+            5
+        </div>
+    </div>
+</body>
+</html>
